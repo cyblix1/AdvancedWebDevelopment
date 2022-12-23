@@ -106,6 +106,7 @@
                     <ul class="nav navbar-nav ml-auto" data-in="fadeInDown" data-out="fadeOutUp">
                         <li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>
                         <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                        <%--     PRODUTCS START--%>
                         <li class="dropdown megamenu-fw">
                             <a href="#" class="nav-link dropdown-toggle arrow" data-toggle="dropdown">Product</a>
                             <ul class="dropdown-menu megamenu-content" role="menu">
@@ -115,10 +116,10 @@
                                             <h6 class="title">Top</h6>
                                             <div class="content">
                                                 <ul class="menu-col">
-                                                    <li><a href="shop.html">Jackets</a></li>
-                                                    <li><a href="shop.html">Shirts</a></li>
-                                                    <li><a href="shop.html">Sweaters & Cardigans</a></li>
-                                                    <li><a href="shop.html">T-shirts</a></li>
+                                                    <li><a href="#">Jackets</a></li>
+                                                    <li><a href="#">Shirts</a></li>
+                                                    <li><a href="#">Sweaters & Cardigans</a></li>
+                                                    <li><a href="#">T-shirts</a></li>
                                                 </ul>
                                             </div>
                                         </div>
@@ -163,6 +164,7 @@
                                 </li>
                             </ul>
                         </li>
+                       <%-- PRODUCTS END--%>
                         <li class="dropdown">
                             <a href="#" class="nav-link dropdown-toggle arrow" data-toggle="dropdown">SHOP</a>
                             <ul class="dropdown-menu">
@@ -236,9 +238,8 @@
         </div>
     </div>
     <!-- End Top Search -->
-
-
-
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+    </asp:ContentPlaceHolder>
     <!-- Start Footer  -->
     <footer>
         <div class="footer-main">
@@ -292,8 +293,6 @@
                 </div>
             </div>
         </div>
-        <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
-            </asp:ContentPlaceHolder>
     </footer>
       <!-- ALL JS FILES -->
     <script src="assets/Customer/js/jquery-3.2.1.min.js"></script>
