@@ -1828,6 +1828,13 @@
     <Compile Include="Admin_Settings.aspx.designer.cs">
       <DependentUpon>Admin_Settings.aspx</DependentUpon>
     </Compile>
+    <Compile Include="CustomerMaster.Master.cs">
+      <DependentUpon>CustomerMaster.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CustomerMaster.Master.designer.cs">
+      <DependentUpon>CustomerMaster.Master</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -2004,6 +2011,7 @@
     <Content Include="assets\Admin\vendor\fontawesome-free\webfonts\fa-solid-900.woff2" />
     <Content Include="assets\Admin\vendor\jquery\jquery.min.map" />
     <Content Include="assets\Admin\vendor\jquery\jquery.slim.min.map" />
+    <Content Include="CustomerMaster.Master" />
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
