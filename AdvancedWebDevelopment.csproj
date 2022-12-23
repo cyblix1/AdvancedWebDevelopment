@@ -1762,6 +1762,7 @@
     <Content Include="assets\Admin\vendor\jquery\jquery.min.js" />
     <Content Include="assets\Admin\vendor\jquery\jquery.slim.js" />
     <Content Include="assets\Admin\vendor\jquery\jquery.slim.min.js" />
+    <Content Include="TestCustomeraspx.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -1836,6 +1837,13 @@
       <DependentUpon>CustomerMaster.Master</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TestCustomeraspx.aspx.cs">
+      <DependentUpon>TestCustomeraspx.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TestCustomeraspx.aspx.designer.cs">
+      <DependentUpon>TestCustomeraspx.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Content Include="AdminMaster.Master" />
