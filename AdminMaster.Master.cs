@@ -13,5 +13,10 @@ namespace AdvancedWebDevelopment
         {
 
         }
+
+        protected void btnCustomers_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("Admin_Customers.aspx");
+        }
     }
 }
