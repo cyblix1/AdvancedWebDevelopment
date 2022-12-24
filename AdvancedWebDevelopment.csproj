@@ -1843,7 +1843,10 @@
     <Content Include="assets\Customer\webfonts\fa-brands-400.svg" />
     <Content Include="assets\Customer\webfonts\fa-regular-400.svg" />
     <Content Include="assets\Customer\webfonts\fa-solid-900.svg" />
+    <Content Include="assets\Customer_Register.aspx" />
     <Content Include="Customer_Index.aspx" />
+    <Content Include="Customer_Login.aspx" />
+    <Content Include="Customer_Register.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -1910,12 +1913,33 @@
     <Compile Include="Admin_Settings.aspx.designer.cs">
       <DependentUpon>Admin_Settings.aspx</DependentUpon>
     </Compile>
+    <Compile Include="assets\Customer_Register.aspx.cs">
+      <DependentUpon>Customer_Register.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="assets\Customer_Register.aspx.designer.cs">
+      <DependentUpon>Customer_Register.aspx</DependentUpon>
+    </Compile>
     <Compile Include="CustomerMaster.Master.cs">
       <DependentUpon>CustomerMaster.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="CustomerMaster.Master.designer.cs">
       <DependentUpon>CustomerMaster.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Customer_Login.aspx.cs">
+      <DependentUpon>Customer_Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Customer_Login.aspx.designer.cs">
+      <DependentUpon>Customer_Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Customer_Register.aspx.cs">
+      <DependentUpon>Customer_Register.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Customer_Register.aspx.designer.cs">
+      <DependentUpon>Customer_Register.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Customer_Index.aspx.cs">
