@@ -30,6 +30,7 @@
     <link rel="stylesheet" href="assets/Customer/css/responsive.css">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="assets/Customer/css/custom.css">
+    <%--font awseome stylesheet--%>
      <link href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
 </head>
 <body>

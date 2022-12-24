@@ -1843,7 +1843,7 @@
     <Content Include="assets\Customer\webfonts\fa-brands-400.svg" />
     <Content Include="assets\Customer\webfonts\fa-regular-400.svg" />
     <Content Include="assets\Customer\webfonts\fa-solid-900.svg" />
-    <Content Include="TestCustomeraspx.aspx" />
+    <Content Include="Customer_Index.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -1918,12 +1918,12 @@
       <DependentUpon>CustomerMaster.Master</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="TestCustomeraspx.aspx.cs">
-      <DependentUpon>TestCustomeraspx.aspx</DependentUpon>
+    <Compile Include="Customer_Index.aspx.cs">
+      <DependentUpon>Customer_Index.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="TestCustomeraspx.aspx.designer.cs">
-      <DependentUpon>TestCustomeraspx.aspx</DependentUpon>
+    <Compile Include="Customer_Index.aspx.designer.cs">
+      <DependentUpon>Customer_Index.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
