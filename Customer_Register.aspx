@@ -15,29 +15,34 @@ background: #eee;
   <div class="container py-5 h-100">
     <div class="row d-flex align-items-center justify-content-center h-100">
       <div class="col-md-7 col-lg-5 col-xl-5">
-        <form>
-           <!-- Name input -->
+        <form runat="server">
+           <!-- Test input -->
           <div class="form-outline mb-7">
-            <input type="name" id="form1Example1" class="form-control form-control-lg" />
-            <label class="form-label" for="form1Example13">Name</label>
+              <asp:TextBox ID="name" CssClass="form-control form-control-lg" runat="server"></asp:TextBox>
+            <label class="form-label" for="name">Name</label>
           </div>
-
           <!-- Email input -->
           <div class="form-outline mb-7">
-            <input type="email" id="form1Example13" class="form-control form-control-lg" />
-            <label class="form-label" for="form1Example13">Email address</label>
+            <asp:TextBox ID="email" CssClass="form-control form-control-lg" runat="server" TextMode="Email"></asp:TextBox>
+            <label class="form-label" for="email">Email address</label>
+          </div>
+
+          <!-- Phone input -->
+          <div class="form-outline mb-7">
+            <asp:TextBox ID="phone" CssClass="form-control form-control-lg" runat="server" TextMode="Phone"></asp:TextBox>
+            <label class="form-label" for="phone">Phone Number</label>
           </div>
 
           <!-- Password input -->
           <div class="form-outline mb-7">
-            <input type="password" id="form1Example23" class="form-control form-control-lg" />
-            <label class="form-label" for="form1Example23">Password</label>
+            <asp:TextBox ID="password" CssClass="form-control form-control-lg" TextMode="Password" runat="server"></asp:TextBox>
+            <label class="form-label" for="password">Password</label>
           </div>
 
           <!-- cONFIRM Password input -->
           <div class="form-outline mb-7">
-            <input type="password" id="form1Exawa3" class="form-control form-control-lg" />
-            <label class="form-label" for="form1Example23">Confirm Password</label>
+            <asp:TextBox ID="password2" CssClass="form-control form-control-lg" TextMode="Password" runat="server"></asp:TextBox>
+            <label class="form-label" for="password2">Confirm Password</label>
           </div>
 
           <div class="d-flex justify-content-around align-items-center mb-4">
@@ -45,7 +50,7 @@ background: #eee;
           </div>
 
           <!-- Submit button -->
-          <button type="submit" class="btn btn-dark btn-lg btn-block">Register</button>
+          <asp:Button ID="btnRegister" text="Register" class="btn btn-dark btn-lg btn-block" runat=server OnClick="btnRegister_Click"/>
              <div class="row d-flex align-items-center justify-content-center">
               <a href="Customer_Login.aspx">Aready have an account? Login</a>
           </div>
