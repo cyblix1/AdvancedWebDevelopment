@@ -4,7 +4,6 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
-
 using System.Data.SqlClient;
 using System.Configuration;
 
@@ -40,6 +39,7 @@ namespace AdvancedWebDevelopment
                 string insertQuery = "INSERT INTO Customers (name, email, phoneNo, hashedPassword, passwordAge, dateCreated) " +
                 "values (@name, @email, @phone, @password, @age, @created)";
                 //------------IMP (hashing/password comparison not done)-------------
+                
                 SqlCommand com = new SqlCommand(insertQuery, conn);
                 com.Parameters.AddWithValue("@name", name.Text);
                 com.Parameters.AddWithValue("@email", email.Text);

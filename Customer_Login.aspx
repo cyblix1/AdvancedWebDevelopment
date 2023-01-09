@@ -19,17 +19,17 @@ background: #eee;
           class="img-fluid" alt="Phone image">
       </div>
       <div class="col-md-7 col-lg-5 col-xl-5 offset-xl-1">
-        <form>
+        <form runat="server">
           <!-- Email input -->
           <div class="form-outline mb-4">
-            <input type="email" id="form1Example13" class="form-control form-control-lg" />
-            <label class="form-label" for="form1Example13">Email address</label>
+            <asp:TextBox ID="email" CssClass="form-control form-control-lg" runat="server" TextMode="Email"></asp:TextBox>
+            <label class="form-label" for="email">Email address</label>
           </div>
 
           <!-- Password input -->
           <div class="form-outline mb-4">
-            <input type="password" id="form1Example23" class="form-control form-control-lg" />
-            <label class="form-label" for="form1Example23">Password</label>
+            <asp:TextBox ID="password" CssClass="form-control form-control-lg" runat="server" TextMode="Password"></asp:TextBox>
+            <label class="form-label" for="password">Password</label>
           </div>
 
           <div class="d-flex justify-content-around align-items-center mb-4">
@@ -42,7 +42,7 @@ background: #eee;
           </div>
 
           <!-- Submit button -->
-          <button type="submit" class="btn btn-dark btn-lg btn-block">Sign in</button>
+          <asp:Button ID="btnLogin" Text="Sign In" CssClass="btn btn-dark btn-lg btn-block" runat="server" OnClick="btnLogin_Click" />
           
           <div class="row d-flex align-items-center justify-content-center">
               <a href="Customer_Register.aspx">Do not have a account? Register</a>
@@ -58,7 +58,6 @@ background: #eee;
           <a class="btn btn-primary btn-lg btn-block" style="background-color: #55acee" href="#!"
             role="button">
             <i class="fab fa-twitter me-2"></i>Continue with Twitter</a>
-
         </form>
       </div>
     </div>
