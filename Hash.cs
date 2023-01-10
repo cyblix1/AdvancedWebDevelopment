@@ -7,11 +7,12 @@ using System.Web;
 using System.Text;
 using Konscious.Security.Cryptography;
 using System.Security.Cryptography;
-namespace AdvancedWebDevelopment.App_Code
+
+namespace PasswordHashing
 {
-    public class hash
+    public class Hash
     {
-        public byte[] CreateSalt()
+        public static byte[] CreateSalt()
         {
             var buffer = new byte[16];
             var rng = new RNGCryptoServiceProvider();
@@ -19,7 +20,14 @@ namespace AdvancedWebDevelopment.App_Code
             return buffer;
         }
 
-        public byte[] HashPassword(string password, byte[] salt)
+        //convert string to array bytes
+        public static byte[] ConvertString(string s)
+        {
+            byte[] bytes = Encoding.ASCII.GetBytes(s);
+            return bytes;
+        }
+
+        public static byte[] HashPassword(string password, byte[] salt)
         {
             var argon2 = new Argon2id(Encoding.UTF8.GetBytes(password));
             argon2.Salt = salt;
@@ -29,7 +37,7 @@ namespace AdvancedWebDevelopment.App_Code
             return argon2.GetBytes(16);
         }
 
-        public bool VerifyHash(string password, byte[] salt, byte[] hash)
+        public static bool VerifyHash(string password, byte[] salt, byte[] hash)
         {
             var newHash = HashPassword(password, salt);
             return hash.SequenceEqual(newHash);

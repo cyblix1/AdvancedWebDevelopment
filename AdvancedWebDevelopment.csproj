@@ -56,6 +56,7 @@
     <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
       <HintPath>packages\System.Buffers.4.5.1\lib\net461\System.Buffers.dll</HintPath>
     </Reference>
+    <Reference Include="System.Data.Services" />
     <Reference Include="System.Memory, Version=4.0.1.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
       <HintPath>packages\System.Memory.4.5.4\lib\net461\System.Memory.dll</HintPath>
     </Reference>
@@ -2070,7 +2071,6 @@
     <Compile Include="Admin_Settings.aspx.designer.cs">
       <DependentUpon>Admin_Settings.aspx</DependentUpon>
     </Compile>
-    <Content Include="App_Code\hash.cs" />
     <Compile Include="assets\Customer_Register.aspx.cs">
       <DependentUpon>Customer_Register.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -2099,6 +2099,7 @@
     <Compile Include="Customer_Register.aspx.designer.cs">
       <DependentUpon>Customer_Register.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Hash.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Customer_Index.aspx.cs">
       <DependentUpon>Customer_Index.aspx</DependentUpon>
@@ -2372,6 +2373,7 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="App_Code\" />
     <Folder Include="Images\NewFolder1\" />
   </ItemGroup>
   <PropertyGroup>

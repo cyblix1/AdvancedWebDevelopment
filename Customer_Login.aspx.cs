@@ -7,6 +7,7 @@ using System.Web.UI.WebControls;
 
 using System.Data.SqlClient;
 using System.Configuration;
+using PasswordHashing;
 
 namespace AdvancedWebDevelopment
 {
@@ -34,10 +35,28 @@ namespace AdvancedWebDevelopment
                 string checkPasswordQuery = "SELECT hashedPassword FROM Customers WHERE email = @email2";
                 SqlCommand pwcomm = new SqlCommand(checkPasswordQuery, conn);
                 pwcomm.Parameters.AddWithValue("@email2", email.Text);
-                string password = pwcomm.ExecuteScalar().ToString();
+                string password2 = pwcomm.ExecuteScalar().ToString();
+                //Test 
+                var salt2 = Hash.CreateSalt();
+                var h1 = Hash.HashPassword("password", salt2);
                 //Hashing here 
+                var salt = Hash.CreateSalt();
+                bool flag = Hash.VerifyHash(password.Text, salt, h1);
+                if (flag)
+                {
+                    Response.Redirect("Customer_Index.aspx");
+                }
+                else
+                {
+                    Response.Write("<script language=javascript>alert('Password or UserName is not correct')</script>");
+                }
             }
-            Response.Redirect("Customer_Index.aspx");
+            else
+            {
+                Response.Write("<script language=javascript>alert('Password or UserName is not correct')</script>");
+            }
+            email.Text = "";
+            password.Text = "";
         }
     }
 }

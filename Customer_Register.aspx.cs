@@ -6,7 +6,7 @@ using System.Web.UI;
 using System.Web.UI.WebControls;
 using System.Data.SqlClient;
 using System.Configuration;
-
+using PasswordHashing;
 
 namespace AdvancedWebDevelopment
 {
@@ -14,7 +14,7 @@ namespace AdvancedWebDevelopment
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            
         }
 
         protected void btnRegister_Click(object sender, EventArgs e)
@@ -38,13 +38,15 @@ namespace AdvancedWebDevelopment
             {
                 string insertQuery = "INSERT INTO Customers (name, email, phoneNo, hashedPassword, passwordAge, dateCreated) " +
                 "values (@name, @email, @phone, @password, @age, @created)";
-                //------------IMP (hashing/password comparison not done)-------------
-                
+                //Create Salt
+                var salt = Hash.CreateSalt();
+                var hash = Hash.HashPassword(password.Text, salt);
+                string storedhash = Convert.ToBase64String(hash);
                 SqlCommand com = new SqlCommand(insertQuery, conn);
                 com.Parameters.AddWithValue("@name", name.Text);
                 com.Parameters.AddWithValue("@email", email.Text);
                 com.Parameters.AddWithValue("@phone", phone.Text);
-                com.Parameters.AddWithValue("@password", password.Text);
+                com.Parameters.AddWithValue("@password", storedhash);
                 com.Parameters.AddWithValue("@age", 1);
                 com.Parameters.AddWithValue("@created", dt);
                 com.ExecuteNonQuery();
