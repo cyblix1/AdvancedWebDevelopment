@@ -23,9 +23,9 @@ namespace PasswordHashing
         //convert string to array bytes
         public static byte[] ConvertString(string s)
         {
-            byte[] bytes = Encoding.ASCII.GetBytes(s);
+            byte[] bytes = Encoding.UTF8.GetBytes(s);
             return bytes;
-        }
+        }   
 
         public static byte[] HashPassword(string password, byte[] salt)
         {

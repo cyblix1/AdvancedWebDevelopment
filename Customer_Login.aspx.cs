@@ -37,14 +37,15 @@ namespace AdvancedWebDevelopment
                 pwcomm.Parameters.AddWithValue("@email2", email.Text);
                 string password2 = pwcomm.ExecuteScalar().ToString();
                 //Test 
-                var salt2 = Hash.CreateSalt();
-                var h1 = Hash.HashPassword("password", salt2);
-                //Hashing here 
                 var salt = Hash.CreateSalt();
-                bool flag = Hash.VerifyHash(password.Text, salt, h1);
+                var salt2 = Hash.CreateSalt();
+                var h1 = Hash.HashPassword("password", salt);
+                //Hashing here (must have same salt)
+                bool flag = Hash.VerifyHash(password.Text, salt2, h1);
                 if (flag)
                 {
                     Response.Redirect("Customer_Index.aspx");
+                    Response.Write("<script language=javascript>alert('Successful logged in')</script>");
                 }
                 else
                 {
