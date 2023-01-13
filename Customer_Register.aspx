@@ -44,7 +44,7 @@ background: #eee;
             <asp:TextBox ID="password2" CssClass="form-control form-control-lg" TextMode="Password" runat="server"></asp:TextBox>
             <label class="form-label" for="password2">Confirm Password</label>
           </div>
-
+            <asp:CompareValidator ID="CompareValidatorPW" runat="server" ErrorMessage="Passwords must match!" ControlToValidate="password2" ControlToCompare="password" Operator="Equal" Type="String" ForeColor="Red"></asp:CompareValidator>
           <div class="d-flex justify-content-around align-items-center mb-4">
             <!-- Checkbox -->
           </div>

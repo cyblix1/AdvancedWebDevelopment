@@ -60,6 +60,15 @@ namespace AdvancedWebDevelopment
         protected global::System.Web.UI.WebControls.TextBox password2;
 
         /// <summary>
+        /// CompareValidatorPW control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.CompareValidator CompareValidatorPW;
+
+        /// <summary>
         /// btnRegister control.
         /// </summary>
         /// <remarks>

@@ -36,10 +36,11 @@ namespace AdvancedWebDevelopment
             }
             else
             {
-                string insertQuery = "INSERT INTO Customers (name, email, phoneNo, hashedPassword, passwordAge, dateCreated) " +
-                "values (@name, @email, @phone, @password, @age, @created)";
+                string insertQuery = "INSERT INTO Customers (name, email, phoneNo, hashedPassword, passwordAge, PasswordSalt, dateCreated) " +
+                "values (@name, @email, @phone, @password, @age, @salt, @created)";
                 //Create Salt
                 var salt = Hash.CreateSalt();
+                string storedsalt = Convert.ToBase64String(salt);
                 var hash = Hash.HashPassword(password.Text, salt);
                 string storedhash = Convert.ToBase64String(hash);
                 SqlCommand com = new SqlCommand(insertQuery, conn);
@@ -48,6 +49,7 @@ namespace AdvancedWebDevelopment
                 com.Parameters.AddWithValue("@phone", phone.Text);
                 com.Parameters.AddWithValue("@password", storedhash);
                 com.Parameters.AddWithValue("@age", 1);
+                com.Parameters.AddWithValue("@salt", storedsalt);
                 com.Parameters.AddWithValue("@created", dt);
                 com.ExecuteNonQuery();
                 Response.Redirect("Customer_Index.aspx");
