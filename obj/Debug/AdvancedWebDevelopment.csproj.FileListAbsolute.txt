@@ -54,9 +54,6 @@ C:\Users\natha\Documents\GitHub\AdvancedWebDevelopment\bin\Microsoft.CodeDom.Pro
 C:\Users\natha\Documents\GitHub\AdvancedWebDevelopment\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
 C:\Users\natha\Documents\GitHub\AdvancedWebDevelopment\obj\Debug\AdvancedWebDevelopment.dll
 C:\Users\natha\Documents\GitHub\AdvancedWebDevelopment\obj\Debug\AdvancedWebDevelopment.pdb
-C:\Users\natha\Documents\GitHub\AdvancedWebDevelopment\obj\Debug\AdvancedWebDevelopment.csproj.AssemblyReference.cache
-C:\Users\natha\Documents\GitHub\AdvancedWebDevelopment\obj\Debug\AdvancedWebDevelopment.csproj.CoreCompileInputs.cache
-C:\Users\natha\Documents\GitHub\AdvancedWebDevelopment\obj\Debug\AdvancedWebDevelopment.csproj.CopyComplete
 C:\Users\natha\Documents\GitHub\AdvancedWebDevelopment\bin\Humanizer.dll
 C:\Users\natha\Documents\GitHub\AdvancedWebDevelopment\bin\Konscious.Security.Cryptography.Argon2.dll
 C:\Users\natha\Documents\GitHub\AdvancedWebDevelopment\bin\Konscious.Security.Cryptography.Blake2.dll
@@ -118,3 +115,4 @@ C:\Users\natha\Documents\GitHub\AdvancedWebDevelopment\bin\vi\Humanizer.resource
 C:\Users\natha\Documents\GitHub\AdvancedWebDevelopment\bin\zh-CN\Humanizer.resources.dll
 C:\Users\natha\Documents\GitHub\AdvancedWebDevelopment\bin\zh-Hans\Humanizer.resources.dll
 C:\Users\natha\Documents\GitHub\AdvancedWebDevelopment\bin\zh-Hant\Humanizer.resources.dll
+C:\Users\natha\Documents\GitHub\AdvancedWebDevelopment\obj\Debug\AdvancedWebDevelopment.csprojResolveAssemblyReference.cache
