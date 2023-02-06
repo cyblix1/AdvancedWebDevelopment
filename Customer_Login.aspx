@@ -19,7 +19,6 @@ background: #eee;
           class="img-fluid" alt="Phone image">
       </div>
       <div class="col-md-7 col-lg-5 col-xl-5 offset-xl-1">
-        <form runat="server">
           <!-- Email input -->
           <div class="form-outline mb-4">
             <asp:TextBox ID="email" CssClass="form-control form-control-lg" runat="server" TextMode="Email"></asp:TextBox>
@@ -58,7 +57,6 @@ background: #eee;
           <a class="btn btn-primary btn-lg btn-block" style="background-color: #55acee" href="#!"
             role="button">
             <i class="fab fa-twitter me-2"></i>Continue with Twitter</a>
-        </form>
       </div>
     </div>
   </div>

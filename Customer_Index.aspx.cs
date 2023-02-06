@@ -7,7 +7,7 @@ using System.Web.UI.WebControls;
 
 namespace AdvancedWebDevelopment
 {
-    public partial class TestCustomeraspx : System.Web.UI.Page
+    public partial class TestCustomeraspx : BasePage
     {
         protected void Page_Load(object sender, EventArgs e)
         {

@@ -11,7 +11,7 @@ using PasswordHashing;
 using System.Security.Cryptography;
 namespace AdvancedWebDevelopment
 {
-    public partial class Customer_Login : System.Web.UI.Page
+    public partial class Customer_Login : BasePage
     {
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -28,6 +28,7 @@ namespace AdvancedWebDevelopment
             com.Parameters.AddWithValue("@email", email.Text);
             int temp = Convert.ToInt32(com.ExecuteScalar().ToString());
             conn.Close();
+            bool flag = false;
             //check if account exists
             if (temp == 1)
             {
@@ -35,18 +36,31 @@ namespace AdvancedWebDevelopment
                 string checkPasswordQuery = "SELECT hashedPassword, PasswordSalt FROM Customers WHERE email = @email2";
                 SqlCommand pwcomm = new SqlCommand(checkPasswordQuery, conn);
                 pwcomm.Parameters.AddWithValue("@email2", email.Text);
-                string password2 = pwcomm.ExecuteScalar().ToString();
                 SqlDataReader reader = pwcomm.ExecuteReader();
-                string hashvalue = reader.GetString(0);
-                string saltvalue = reader.GetString(1);
-                var hashvalue2 = Convert.FromBase64String(hashvalue);
-                var saltvalue2 = Convert.FromBase64String(saltvalue);
-                //Hashing here (
-                bool flag = Hash.VerifyHash(password.Text, saltvalue2,hashvalue2);
-                if (flag)
+                if (reader.HasRows)
                 {
-                    Response.Redirect("Customer_Index.aspx");
+                    reader.Read();
+                    string hashvalue = reader.GetString(0);
+                    string saltvalue = reader.GetString(1);
+                    var hashvalue2 = Convert.FromBase64String(hashvalue);
+                    var saltvalue2 = Convert.FromBase64String(saltvalue);
+
+                    //Hashing here (
+                    flag = Hash.VerifyHash(password.Text, saltvalue2,hashvalue2);
+                }
+                else
+                {
+                    Console.WriteLine("No data found ");
+                }
+
+                //Hashing here (
+                if (flag == true)
+                {
+                    Session["CHANGE_MASTERPAGE"] = "~/AfterLogin.Master";
+                    Session["CHANGE_MASTERPAGE2"] = null;
                     Response.Write("<script language=javascript>alert('Successful logged in')</script>");
+                    //Changed masterpage 
+                    Response.Redirect("Customer_Index.aspx");
                 }
                 else
                 {
@@ -59,6 +73,7 @@ namespace AdvancedWebDevelopment
             }
             email.Text = "";
             password.Text = "";
+            flag = false;
         }
     }
 }

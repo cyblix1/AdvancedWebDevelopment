@@ -10,7 +10,7 @@ using PasswordHashing;
 
 namespace AdvancedWebDevelopment
 {
-    public partial class Customer_Register : System.Web.UI.Page
+    public partial class Customer_Register : BasePage
     {
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -52,6 +52,8 @@ namespace AdvancedWebDevelopment
                 com.Parameters.AddWithValue("@salt", storedsalt);
                 com.Parameters.AddWithValue("@created", dt);
                 com.ExecuteNonQuery();
+                Session["CHANGE_MASTERPAGE"] = "~/AfterLogin.Master";
+                Session["CHANGE_MASTERPAGE2"] = null;
                 Response.Redirect("Customer_Index.aspx");
                 Response.Write("<script>alert('Successfully created account! Welcome! ');</script>");
             }

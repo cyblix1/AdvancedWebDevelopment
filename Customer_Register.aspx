@@ -15,7 +15,6 @@ background: #eee;
   <div class="container py-5 h-100">
     <div class="row d-flex align-items-center justify-content-center h-100">
       <div class="col-md-7 col-lg-5 col-xl-5">
-        <form runat="server">
            <!-- Test input -->
           <div class="form-outline mb-7">
               <asp:TextBox ID="name" CssClass="form-control form-control-lg" runat="server"></asp:TextBox>
@@ -65,8 +64,6 @@ background: #eee;
           <a class="btn btn-primary btn-lg btn-block" style="background-color: #55acee" href="#!"
             role="button">
             <i class="fab fa-twitter me-2"></i>Continue with Twitter</a>--%>
-
-        </form>
       </div>
     </div>
   </div>
