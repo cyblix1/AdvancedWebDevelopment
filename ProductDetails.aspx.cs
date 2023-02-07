@@ -11,7 +11,7 @@ using System.Configuration;
 
 namespace AdvancedWebDevelopment
 {
-    public partial class ProductDetails : System.Web.UI.Page
+    public partial class ProductDetails : BasePage
     {
         Product prod = null;
         string constr = ConfigurationManager.ConnectionStrings["Database"].ConnectionString;

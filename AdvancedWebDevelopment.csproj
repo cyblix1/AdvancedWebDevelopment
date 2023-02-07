@@ -90,6 +90,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Admin_AddProduct.aspx" />
+    <Content Include="Admin_Charts.aspx" />
+    <Content Include="Admin_Index.aspx" />
+    <Content Include="Admin_Shop.aspx" />
+    <Content Include="Admin_Users.aspx" />
     <Content Include="App_Data\Database.mdf" />
     <Content Include="App_Data\Database_log.ldf">
       <DependentUpon>Database.mdf</DependentUpon>
@@ -1859,10 +1864,12 @@
     <Content Include="assets\Customer\webfonts\fa-regular-400.svg" />
     <Content Include="assets\Customer\webfonts\fa-solid-900.svg" />
     <Content Include="assets\Customer_Register.aspx" />
+    <Content Include="Customer_EmailVerfication.aspx" />
     <Content Include="Customer_Index.aspx" />
     <Content Include="Customer_Login.aspx" />
     <Content Include="Customer_Register.aspx" />
     <Content Include="Customer_Shop.aspx" />
+    <Content Include="Global.asax" />
     <Content Include="packages\Konscious.Security.Cryptography.Argon2.1.3.0\lib\net46\Konscious.Security.Cryptography.Argon2.dll" />
     <Content Include="packages\Konscious.Security.Cryptography.Argon2.1.3.0\lib\net46\Konscious.Security.Cryptography.Argon2.xml" />
     <Content Include="packages\Konscious.Security.Cryptography.Argon2.1.3.0\lib\net6.0\Konscious.Security.Cryptography.Argon2.dll" />
@@ -2002,6 +2009,48 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AdminMaster.Master.cs">
+      <DependentUpon>AdminMaster.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminMaster.Master.designer.cs">
+      <DependentUpon>AdminMaster.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_AddProduct.aspx.cs">
+      <DependentUpon>Admin_AddProduct.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin_AddProduct.aspx.designer.cs">
+      <DependentUpon>Admin_AddProduct.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_Charts.aspx.cs">
+      <DependentUpon>Admin_Charts.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin_Charts.aspx.designer.cs">
+      <DependentUpon>Admin_Charts.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_Index.aspx.cs">
+      <DependentUpon>Admin_Index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin_Index.aspx.designer.cs">
+      <DependentUpon>Admin_Index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_Shop.aspx.cs">
+      <DependentUpon>Admin_Shop.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin_Shop.aspx.designer.cs">
+      <DependentUpon>Admin_Shop.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_Users.aspx.cs">
+      <DependentUpon>Admin_Users.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin_Users.aspx.designer.cs">
+      <DependentUpon>Admin_Users.aspx</DependentUpon>
+    </Compile>
     <Compile Include="AfterLogin.Master.cs">
       <DependentUpon>AfterLogin.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -2026,6 +2075,20 @@
     <Compile Include="CustomerMaster.Master.designer.cs">
       <DependentUpon>CustomerMaster.Master</DependentUpon>
     </Compile>
+    <Compile Include="Customer_EmailVerfication.aspx.cs">
+      <DependentUpon>Customer_EmailVerfication.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Customer_EmailVerfication.aspx.designer.cs">
+      <DependentUpon>Customer_EmailVerfication.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Customer_Index.aspx.cs">
+      <DependentUpon>Customer_Index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Customer_Index.aspx.designer.cs">
+      <DependentUpon>Customer_Index.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Customer_Login.aspx.cs">
       <DependentUpon>Customer_Login.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -2047,6 +2110,9 @@
     <Compile Include="Customer_Shop.aspx.designer.cs">
       <DependentUpon>Customer_Shop.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
     <Compile Include="Hash.cs" />
     <Compile Include="Product.cs" />
     <Compile Include="ProductDetails.aspx.cs">
@@ -2057,13 +2123,6 @@
       <DependentUpon>ProductDetails.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Customer_Index.aspx.cs">
-      <DependentUpon>Customer_Index.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Customer_Index.aspx.designer.cs">
-      <DependentUpon>Customer_Index.aspx</DependentUpon>
-    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Content Include="assets\Admin\scss\navs\_global.scss" />
@@ -2252,6 +2311,7 @@
     <Content Include="assets\Customer\webfonts\fa-solid-900.woff" />
     <Content Include="assets\Customer\webfonts\fa-solid-900.woff2" />
     <Content Include="AfterLogin.Master" />
+    <Content Include="AdminMaster.Master" />
     <None Include="packages.config" />
     <Content Include="packages\Konscious.Security.Cryptography.Argon2.1.3.0\.signature.p7s" />
     <Content Include="packages\Konscious.Security.Cryptography.Argon2.1.3.0\Konscious.Security.Cryptography.Argon2.1.3.0.nupkg" />

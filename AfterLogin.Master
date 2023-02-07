@@ -42,6 +42,7 @@
 <body>
     
     <form id="form1" runat="server">
+
             <!-- Start Main Top -->
         <asp:Label ID="lblAfterLogin" runat="server" Text="Label" Font-Bold="true"></asp:Label>
     <div class="main-top">
@@ -89,6 +90,7 @@
                             <li><a href="#">Our location</a></li>
                             <li><a href="#">Contact Us</a></li>
                             <li><a href="#">AfterLogin</a></li>
+                            
                         </ul>
                     </div>
                 </div>
@@ -114,7 +116,7 @@
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse" id="navbar-menu">
                     <ul class="nav navbar-nav ml-auto" data-in="fadeInDown" data-out="fadeOutUp">
-                        <li class="nav-item active"><a class="nav-link" href="Customer_Index.aspx">Home</a></li>
+                        <li class="nav-item active"><a class="nav-link" href="Home">Home</a></li>
                         <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
                         <%--     PRODUTCS START--%>
                         <li class="dropdown megamenu-fw">
@@ -178,7 +180,7 @@
                         <li class="dropdown">
                             <a href="#" class="nav-link dropdown-toggle arrow" data-toggle="dropdown">SHOP</a>
                             <ul class="dropdown-menu">
-                                <li><a href="cart.html">Cart</a></li>
+                                <li><a href="Shop">Shop</a></li>
                                 <li><a href="checkout.html">Checkout</a></li>
                                 <li><a href="my-account.html">My Account</a></li>
                                 <li><a href="wishlist.html">Wishlist</a></li>

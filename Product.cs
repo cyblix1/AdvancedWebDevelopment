@@ -70,7 +70,7 @@ public class Product
         get { return _category; }
         set { _category = value; }
     }
-   
+
 
     //below as the Class methods for some DB operations. 
     public Product getProduct(string prodID)
@@ -96,7 +96,7 @@ public class Product
             Prod_Image = dr["image"].ToString();
             unit_Price = decimal.Parse(dr["price"].ToString());
             Prod_Cat = dr["category"].ToString();
-            
+
 
             prodDetail = new Product(prodID, prod_Name, prod_Desc, unit_Price, Prod_Image, Prod_Cat);
         }
@@ -111,4 +111,39 @@ public class Product
 
         return prodDetail;
     }
+
+    public int UserDelete(string ID)
+    {
+        string queryStr = "DELETE FROM Customers WHERE customerId=@ID";
+        SqlConnection conn = new SqlConnection(_connStr);
+        SqlCommand cmd = new SqlCommand(queryStr, conn);
+        cmd.Parameters.AddWithValue("@ID", ID);
+        conn.Open();
+        int nofRow = 0;
+        nofRow = cmd.ExecuteNonQuery();
+        conn.Close();
+        return nofRow;
+    }
+
+    public int ProductInsert()
+    {
+        int result = 0;
+        string queryStr = "INSERT INTO Products(name,description,price,image,category)" + "values (@name, @desc, @price, @img, @cat)";
+
+        SqlConnection conn = new SqlConnection(_connStr);
+        SqlCommand cmd = new SqlCommand(queryStr, conn);
+        cmd.Parameters.AddWithValue("@name", this.Product_Name);
+        cmd.Parameters.AddWithValue("@desc", this.Product_Desc);
+        cmd.Parameters.AddWithValue("@price", this.Unit_Price);
+        cmd.Parameters.AddWithValue("@img", this.Product_Image);
+        cmd.Parameters.AddWithValue("@cat", this.Product_Category);
+
+        conn.Open();
+        result += cmd.ExecuteNonQuery();
+        conn.Close();
+
+        return result;
+    }//end Insert
+
+
 }
