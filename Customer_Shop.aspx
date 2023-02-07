@@ -10,11 +10,10 @@
                 <div class="col-xl-3 col-lg-3 col-sm-12 col-xs-12 sidebar-shop-left">
                     <div class="product-categori">
                         <div class="search-product">
-                    
-                                <asp:TextBox ID="txtSearch" placeholder="Search here...." runat="server" CssClass="form-control"></asp:TextBox>    
-                                <asp:Button ID="buttonSearch" runat="server" Text="Search" CssClass="form-control" OnClick="btnSearch_Click" />
-                            <br />
-
+                            <form action="#">
+                                <input class="form-control" placeholder="Search here..." type="text">
+                                <button type="submit"> <i class="fa fa-search"></i> </button>
+                            </form>
                         </div>
                         <div class="filter-sidebar-left nav nav-tabs">
                             <div class="title-left">
@@ -118,7 +117,7 @@
                                                                 <%--<asp:ImageButton PostBackUrl='<%# ResolveClientUrl("ProductDetails.aspx?ProdID=" + Eval("BS_ID"))%>' ID="imgBooks" CssClass="bookimage" ImageUrl='<%#Eval("BS_Image") %>' runat="server" />--%>
                                                     <div class="mask-icon">
                                                         <ul>
-                                                            <li><a href="#" onclick="window.location.href='<%# ResolveClientUrl("Product?ProdID=" + Eval("Id")) %>'" data-toggle="tooltip" data-placement="right" title="View"><i class="fas fa-eye"></i></a></li>
+                                                            <li><a href="#" onclick="window.location.href='<%# ResolveClientUrl("ProductDetails.aspx?ProdID=" + Eval("Id")) %>'" data-toggle="tooltip" data-placement="right" title="View"><i class="fas fa-eye"></i></a></li>
                                                             <li><a href="#" data-toggle="tooltip" data-placement="right" title="Compare"><i class="fas fa-sync-alt"></i></a></li>
                                                             <li><a href="#" data-toggle="tooltip" data-placement="right" title="Add to Wishlist"><i class="far fa-heart"></i></a></li>
                                                         </ul>
@@ -160,7 +159,7 @@
                                                                 <%--<asp:ImageButton PostBackUrl='<%# ResolveClientUrl("ProductDetails.aspx?ProdID=" + Eval("BS_ID"))%>' ID="imgBooks" CssClass="bookimage" ImageUrl='<%#Eval("BS_Image") %>' runat="server" />--%>
                                                     <div class="mask-icon">
                                                         <ul>
-                                                            <li><a href="#" onclick="window.location.href='<%# ResolveClientUrl("Product?ProdID=" + Eval("Id")) %>'" data-toggle="tooltip" data-placement="right" title="View"><i class="fas fa-eye"></i></a></li>
+                                                            <li><a href="#" onclick="window.location.href='<%# ResolveClientUrl("ProductDetails.aspx?ProdID=" + Eval("Id")) %>'" data-toggle="tooltip" data-placement="right" title="View"><i class="fas fa-eye"></i></a></li>
                                                             <li><a href="#" data-toggle="tooltip" data-placement="right" title="Compare"><i class="fas fa-sync-alt"></i></a></li>
                                                             <li><a href="#" data-toggle="tooltip" data-placement="right" title="Add to Wishlist"><i class="far fa-heart"></i></a></li>
                                                         </ul>
@@ -202,7 +201,7 @@
                                                                 <%--<asp:ImageButton PostBackUrl='<%# ResolveClientUrl("ProductDetails.aspx?ProdID=" + Eval("BS_ID"))%>' ID="imgBooks" CssClass="bookimage" ImageUrl='<%#Eval("BS_Image") %>' runat="server" />--%>
                                                     <div class="mask-icon">
                                                         <ul>
-                                                            <li><a href="#" onclick="window.location.href='<%# ResolveClientUrl("Product?ProdID=" + Eval("Id")) %>'" data-toggle="tooltip" data-placement="right" title="View"><i class="fas fa-eye"></i></a></li>
+                                                            <li><a href="#" onclick="window.location.href='<%# ResolveClientUrl("ProductDetails.aspx?ProdID=" + Eval("Id")) %>'" data-toggle="tooltip" data-placement="right" title="View"><i class="fas fa-eye"></i></a></li>
                                                             <li><a href="#" data-toggle="tooltip" data-placement="right" title="Compare"><i class="fas fa-sync-alt"></i></a></li>
                                                             <li><a href="#" data-toggle="tooltip" data-placement="right" title="Add to Wishlist"><i class="far fa-heart"></i></a></li>
                                                         </ul>
@@ -235,6 +234,6 @@
                 </div>
             </div>
         </div>
-
+ipt>
     <!-- End Shop Page -->
 </asp:Content>

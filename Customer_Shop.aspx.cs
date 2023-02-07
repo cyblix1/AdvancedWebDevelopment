@@ -13,7 +13,7 @@ using System.Configuration;
 
 namespace AdvancedWebDevelopment
 {
-    public partial class Customer_Shop : BasePage
+    public partial class Customer_Shop : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -63,12 +63,6 @@ namespace AdvancedWebDevelopment
                 cmd.Fill(prod);
                 return prod;
             }
-        }
-
-        protected void btnSearch_Click(object sender, EventArgs e)
-        {
-            Session["Search"] = txtSearch.Text;
-            Response.Redirect("Customer_Search.aspx");
         }
     }
 }

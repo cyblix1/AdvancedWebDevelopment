@@ -44,7 +44,7 @@ background: #eee;
           <asp:Button ID="btnLogin" Text="Sign In" CssClass="btn btn-dark btn-lg btn-block" runat="server" OnClick="btnLogin_Click" />
           
           <div class="row d-flex align-items-center justify-content-center">
-              <a href="Registration">Do not have a account? Register</a>
+              <a href="Customer_Register.aspx">Do not have a account? Register</a>
           </div>
           <div class="divider d-flex align-items-center my-4">
             <p class="text-center fw-bold mx-3 mb-0 text-muted">OR</p>
