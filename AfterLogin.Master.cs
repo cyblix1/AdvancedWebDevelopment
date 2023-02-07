@@ -18,7 +18,8 @@ namespace AdvancedWebDevelopment
         {
             Session["CHANGE_MASTERPAGE2"] = "~/CustomerMaster.Master";
             Session["CHANGE_MASTERPAGE"] = null;
-            Response.Redirect("Customer_Login.aspx");
+            Session["Email"] = null;
+            Response.Redirect("Login");
         }
     }
 }

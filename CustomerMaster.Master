@@ -111,7 +111,7 @@
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse" id="navbar-menu">
                     <ul class="nav navbar-nav ml-auto" data-in="fadeInDown" data-out="fadeOutUp">
-                        <li class="nav-item active"><a class="nav-link" href="Customer_Index.aspx">Home</a></li>
+                        <li class="nav-item active"><a class="nav-link" href="Home">Home</a></li>
                         <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
                         <%--     PRODUTCS START--%>
                         <li class="dropdown megamenu-fw">
@@ -175,7 +175,7 @@
                         <li class="dropdown">
                             <a href="#" class="nav-link dropdown-toggle arrow" data-toggle="dropdown">SHOP</a>
                             <ul class="dropdown-menu">
-                                <li><a href="cart.html">Cart</a></li>
+                                <li><a href="Shop">Shop</a></li>
                                 <li><a href="checkout.html">Checkout</a></li>
                                 <li><a href="my-account.html">My Account</a></li>
                                 <li><a href="wishlist.html">Wishlist</a></li>
@@ -212,11 +212,11 @@
                                     Activity Log
                                 </a>
                                 <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="Customer_Login.aspx"<%-- data-toggle="modal" data-target="#logoutModal"--%>>
+                                <a class="dropdown-item" href="Login"<%-- data-toggle="modal" data-target="#logoutModal"--%>>
                                     <i class="fas fa-sign-in-alt fa-sm fa-fw mr-2 text-gray-400"></i>
                                     Login 
                                 </a>
-                                <a class="dropdown-item" href="Customer_Register.aspx"<%-- data-toggle="modal" data-target="#logoutModal"--%>>
+                                <a class="dropdown-item" href="Registration"<%-- data-toggle="modal" data-target="#logoutModal"--%>>
                                     <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
                                     Register
                                 </a>
@@ -348,7 +348,9 @@
     <script src="assets/Customer/js/baguetteBox.min.js"></script>
     <script src="assets/Customer/js/form-validator.min.js"></script>
     <script src="assets/Customer/js/contact-form-script.js"></script>
-    <script src="assets/Customer/js/custom.js"></script>
+    <script src="assets/Customer/js/custom.js"></script>>
+    
+
 </body>
 </html>
 
