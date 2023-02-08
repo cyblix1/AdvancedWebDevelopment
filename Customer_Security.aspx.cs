@@ -34,8 +34,8 @@ namespace AdvancedWebDevelopment
                 string id = reader["customerId"].ToString();
                 reader.Close();
                 //get asnwers 
-                string q1 = DropDownList1.SelectedValue;
-                string q2 = DropDownList3.SelectedValue;
+                string q1 = DropDownList3.SelectedValue;
+                string q2 = DropDownList1.SelectedValue;
                 string a1 = answer1.Text;
                 string a2 = answer2.Text;
                 //Now need to save stuff 

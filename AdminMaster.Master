@@ -213,14 +213,11 @@
                                     Activity Log
                                 </a>
                                 <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="Customer_Login.aspx"<%-- data-toggle="modal" data-target="#logoutModal"--%>>
+                                <a class="dropdown-item" href="Login"<%-- data-toggle="modal" data-target="#logoutModal"--%>>
                                     <i class="fas fa-sign-in-alt fa-sm fa-fw mr-2 text-gray-400"></i>
-                                    Login 
+                                    Logout
                                 </a>
-                                <a class="dropdown-item" href="Customer_Register.aspx"<%-- data-toggle="modal" data-target="#logoutModal"--%>>
-                                    <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
-                                    Register
-                                </a>
+
                             </div>
                         </li>
 
