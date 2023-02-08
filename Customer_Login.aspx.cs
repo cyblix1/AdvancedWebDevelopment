@@ -99,7 +99,8 @@ namespace AdvancedWebDevelopment
                     {
                         Session["CHANGE_MASTERPAGE"] = "~/AfterLogin.Master";
                         Session["CHANGE_MASTERPAGE2"] = null;
-                        Response.Write("<script language=javascript>alert('Successful logged in')</script>");
+                        Response.Write("<script language=javascript>alert('Successful logged in');</script>");
+
                         //Changed masterpage 
                         Response.Redirect("Home");
                     }

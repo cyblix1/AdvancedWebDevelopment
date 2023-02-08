@@ -622,7 +622,8 @@
      transform: scaleY(1);
      color: #ffffff;
 }
- .hvr-hover{
+ .hvr-hover{    top: 0px;
+    left: 1px;
 }
  ul.cart-list > li.total > .btn:hover{
      color: #ffffff;

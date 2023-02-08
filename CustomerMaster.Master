@@ -1,5 +1,4 @@
 ﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="CustomerMaster.master.cs" Inherits="AdvancedWebDevelopment.assets.CustomerMaster" %>
-
 <!DOCTYPE html>
 
 <html>

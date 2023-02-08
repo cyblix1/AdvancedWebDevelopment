@@ -72,7 +72,7 @@ namespace AdvancedWebDevelopment
                 //Check if email exists
                 if (exists)
                 {
-                    Response.Write("<script>Alert('Sorry, Email is already taken!');</script>");
+                    Response.Write("<script language=javascript>alert('Sorry, this email is taken');</script>");
                 }
                 else
                 {
@@ -98,7 +98,7 @@ namespace AdvancedWebDevelopment
                     SendCode(email.Text, code);
                     Session["code"] = code;
                     Session["emailotp"] = email.Text;
-                    Response.Redirect("Customer_EmailVerfication.aspx");
+                    Response.Redirect("EmailVerfication");
 
 
                 }

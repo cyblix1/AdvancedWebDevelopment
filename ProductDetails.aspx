@@ -2,7 +2,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder2" runat="server">
-     <!-- Start Shop Detail  -->
+        <!-- Start Shop Detail  -->
     <div class="shop-detail-box-main">
         <div class="container">
             <div class="row">
@@ -229,4 +229,5 @@
         </div>
     </div>
     <!-- End Cart -->
+
 </asp:Content>

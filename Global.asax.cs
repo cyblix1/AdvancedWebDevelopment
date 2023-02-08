@@ -28,6 +28,10 @@ namespace AdvancedWebDevelopment
             routes.MapPageRoute("Search", "Search", "~/Customer_Search.aspx");
             routes.MapPageRoute("Product", "Product", "~/ProductDetails.aspx");
             routes.MapPageRoute("OTP", "EmailVerfication", "~/Customer_EmailVerfication.aspx");
+            routes.MapPageRoute("Security", "SecurityQuestions", "~/Customer_Security.aspx");
+            routes.MapPageRoute("SecurityEmail", "EmailInput", "~/Customer_ForgetPasswordEmailInput.aspx");
+            routes.MapPageRoute("Forgetpass", "forgetpass", "~/Customer_ForgetPassword.aspx");
+            routes.MapPageRoute("changepass", "Changepassword", "~/Customer_ChangePassword.aspx");
         }
 
 

@@ -1864,10 +1864,14 @@
     <Content Include="assets\Customer\webfonts\fa-regular-400.svg" />
     <Content Include="assets\Customer\webfonts\fa-solid-900.svg" />
     <Content Include="assets\Customer_Register.aspx" />
+    <Content Include="Customer_ChangePassword.aspx" />
     <Content Include="Customer_EmailVerfication.aspx" />
+    <Content Include="Customer_ForgetPassword.aspx" />
+    <Content Include="Customer_ForgetPasswordEmailInput.aspx" />
     <Content Include="Customer_Index.aspx" />
     <Content Include="Customer_Login.aspx" />
     <Content Include="Customer_Register.aspx" />
+    <Content Include="Customer_Security.aspx" />
     <Content Include="Customer_Shop.aspx" />
     <Content Include="Global.asax" />
     <Content Include="packages\Konscious.Security.Cryptography.Argon2.1.3.0\lib\net46\Konscious.Security.Cryptography.Argon2.dll" />
@@ -2537,12 +2541,33 @@
     <Compile Include="CustomerMaster.Master.designer.cs">
       <DependentUpon>CustomerMaster.Master</DependentUpon>
     </Compile>
+    <Compile Include="Customer_ChangePassword.aspx.cs">
+      <DependentUpon>Customer_ChangePassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Customer_ChangePassword.aspx.designer.cs">
+      <DependentUpon>Customer_ChangePassword.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Customer_EmailVerfication.aspx.cs">
       <DependentUpon>Customer_EmailVerfication.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Customer_EmailVerfication.aspx.designer.cs">
       <DependentUpon>Customer_EmailVerfication.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Customer_ForgetPassword.aspx.cs">
+      <DependentUpon>Customer_ForgetPassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Customer_ForgetPassword.aspx.designer.cs">
+      <DependentUpon>Customer_ForgetPassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Customer_ForgetPasswordEmailInput.aspx.cs">
+      <DependentUpon>Customer_ForgetPasswordEmailInput.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Customer_ForgetPasswordEmailInput.aspx.designer.cs">
+      <DependentUpon>Customer_ForgetPasswordEmailInput.aspx</DependentUpon>
     </Compile>
     <Compile Include="Customer_Index.aspx.cs">
       <DependentUpon>Customer_Index.aspx</DependentUpon>
@@ -2564,6 +2589,13 @@
     </Compile>
     <Compile Include="Customer_Register.aspx.designer.cs">
       <DependentUpon>Customer_Register.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Customer_Security.aspx.cs">
+      <DependentUpon>Customer_Security.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Customer_Security.aspx.designer.cs">
+      <DependentUpon>Customer_Security.aspx</DependentUpon>
     </Compile>
     <Compile Include="Customer_Shop.aspx.cs">
       <DependentUpon>Customer_Shop.aspx</DependentUpon>
