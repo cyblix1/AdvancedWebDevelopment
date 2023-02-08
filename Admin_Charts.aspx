@@ -19,7 +19,7 @@
             </td>
         </tr>
     </table>
-    <script src="http://code.highcharts.com/highcharts.js"></script>
+
     <script>
         $('#MyLineChart').highcharts({
             chart: {

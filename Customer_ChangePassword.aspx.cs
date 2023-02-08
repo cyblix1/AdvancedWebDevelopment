@@ -42,7 +42,6 @@ namespace AdvancedWebDevelopment
             conn.Close();
             Session["email"] = null;
             Response.Redirect("Login");
-
         }
     }
 }

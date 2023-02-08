@@ -38,7 +38,7 @@
                                     <a class="list-group-item list-group-item-action" href="#sub-men2" data-toggle="collapse" aria-expanded="false" aria-controls="sub-men2">Footwear 
 								<small class="text-muted">(50)</small>
 								</a>
-                                    <div class="collapse" id="sub-men2" data-parent="#list-group-men">
+                                    <div id="sub-men2" class="collapadmin@gmail.comse" data-parent="#list-group-men">
                                         <div class="list-group">
                                             <a href="#repeater2" data-toggle="tab" class="">Sports Shoes <small class="text-muted">(10)</small></a>
                                             <a href="#" class="list-group-item list-group-item-action">Sneakers <small class="text-muted">(20)</small></a>
@@ -146,8 +146,10 @@
                                                     <h5 class="prodprice" id="lblPrice" runat="server"> <%# Eval("price") %> </h5>
                                                     <asp:TextBox ID="txtprice" runat="server" Visible="false" Text='<%# Eval("price") %>'></asp:TextBox>
                                                     <%-- this replace above--%>
-                                                   <%--<asp:Label CssClass="booktitle" ID="lblPrice" runat="server" Text='<%#Eval("BS_Title")%>'></asp:Label>--%>     
+                                                   <%--<asp:Label CssClass="booktitle" ID="lblPrice" runat="server" Text='<%#Eval("BS_Title")%>'></asp:Label>--%>
+                                                    <br />
                                                     <asp:LinkButton ID="lnkEdit" Text="Edit |" runat="server" OnClick="OnEdit" Font-Size="X-Small" />
+                                                    
                                                     <asp:LinkButton ID="lnkUpdate" Text="Update |" runat="server" Onclick="OnUpdate" Visible="false" Font-Size="X-Small" />
                                                     <asp:LinkButton ID="lnkCancel" Text="Cancel |" runat="server" OnClick="OnCancel" Visible="false" Font-Size="X-Small" />
                                                     <asp:LinkButton ID="lnkDelete" Text="Delete" runat="server" OnClick="OnDelete" OnClientClick="return confirm('Are you sure you want to delete this?');" Font-Size="X-Small" />
