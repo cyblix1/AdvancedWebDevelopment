@@ -2615,7 +2615,6 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="GraphModel.cs" />
     <Compile Include="Hash.cs" />
     <Compile Include="Product.cs" />
     <Compile Include="ProductDetails.aspx.cs">
