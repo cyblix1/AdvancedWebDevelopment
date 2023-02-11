@@ -1871,6 +1871,7 @@
     <Content Include="Customer_Index.aspx" />
     <Content Include="Customer_Login.aspx" />
     <Content Include="Customer_Register.aspx" />
+    <Content Include="Customer_Search.aspx" />
     <Content Include="Customer_Security.aspx" />
     <Content Include="Customer_Shop.aspx" />
     <Content Include="Global.asax" />
@@ -2589,6 +2590,13 @@
     </Compile>
     <Compile Include="Customer_Register.aspx.designer.cs">
       <DependentUpon>Customer_Register.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Customer_Search.aspx.cs">
+      <DependentUpon>Customer_Search.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Customer_Search.aspx.designer.cs">
+      <DependentUpon>Customer_Search.aspx</DependentUpon>
     </Compile>
     <Compile Include="Customer_Security.aspx.cs">
       <DependentUpon>Customer_Security.aspx</DependentUpon>
