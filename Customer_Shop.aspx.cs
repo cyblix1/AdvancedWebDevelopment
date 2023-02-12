@@ -73,10 +73,5 @@ namespace AdvancedWebDevelopment
             Response.Redirect("Customer_Search.aspx");
         }
 
-        protected void lnkAddToCart_Click(object sender, EventArgs e)
-        {
-
-            Product product = new Product().getProduct(prodID);
-        }
     }
 }

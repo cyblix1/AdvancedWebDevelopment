@@ -164,7 +164,7 @@
                                                             <li><a href="#" data-toggle="tooltip" data-placement="right" title="Compare"><i class="fas fa-sync-alt"></i></a></li>
                                                             <li><a href="#" data-toggle="tooltip" data-placement="right" title="Add to Wishlist"><i class="far fa-heart"></i></a></li>
                                                         </ul>
-                                                        <asp:LinkButton runat="server" ID="AddToCart" Text="Add to Cart" OnClick="lnkAddToCart_Click"></asp:LinkButton>
+                                                        <a class="cart" href="#">Add to Cart</a>
                                                     </div>
                                                 </div>
                                                 <div class="why-text">
