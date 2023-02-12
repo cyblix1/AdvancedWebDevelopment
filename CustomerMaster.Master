@@ -222,7 +222,7 @@
                             </div>
                         </li>
 
-                        <li class="side-menu"><a href="#">
+                        <li class="side-menu"><a href="ShoppingCart">
 						<i class="fa fa-shopping-bag"></i>
                             <span class="badge">3</span>
 					</a></li>
@@ -251,7 +251,7 @@
                             <p>1x - <span class="price">$40.00</span></p>
                         </li>
                         <li class="total">
-                            <a href="#" class="btn btn-default hvr-hover btn-cart">VIEW CART</a>
+                            <a href="ShoppingCart" class="btn btn-default hvr-hover btn-cart">VIEW CART</a>
                             <span class="float-right"><strong>Total</strong>: $180.00</span>
                         </li>
                     </ul>

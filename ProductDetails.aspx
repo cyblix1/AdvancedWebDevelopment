@@ -1,8 +1,9 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/CustomerMaster.Master" AutoEventWireup="true" CodeBehind="ProductDetails.aspx.cs" Inherits="AdvancedWebDevelopment.ProductDetails" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder2" runat="server">
-        <!-- Start Shop Detail  -->
+            <!-- Start Shop Detail  -->
     <div class="shop-detail-box-main">
         <div class="container">
             <div class="row">
@@ -19,46 +20,25 @@
                         <h2><asp:Label ID="lblname" runat="server" Text="Label"></asp:Label></h2>
                         <h5><asp:Label ID="lblprice" runat="server" Text="Label"></asp:Label></h5>
                         <%--start--%>
-                        
                                 <h4>Short Description:</h4>
                                 <p><asp:Label ID="lbldesc" runat="server" Text="Label"></asp:Label></p>
-                                <ul>
-                                    <li>
-                                        <div class="form-group size-st">
-                                            <label class="size-label">Size</label>
-                                            <select id="basic" class="selectpicker show-tick form-control">
-									<option value="0">Size</option>
-									<option value="0">S</option>
-									<option value="1">M</option>
-									<option value="1">L</option>
-									<option value="1">XL</option>
-									<option value="1">XXL</option>
-									<option value="1">3XL</option>
-									<option value="1">4XL</option>
-								</select>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="form-group quantity-box">
-                                            <label class="control-label">Quantity</label>
-                                            <input class="form-control" value="0" min="0" max="20" type="number">
-                                        </div>
-                                    </li>
-                                </ul>
 
-                                <div class="price-box-bar">
-                                    <div class="cart-and-bay-btn">
-                                        <a class="btn hvr-hover" data-fancybox-close="" href="#">Add to cart</a>
-                                    </div>
+
+                            <div class="price-box-bar">
+                                <div class="cart-and-bay-btn">
+
+                                <%--    <a class="btn hvr-hover" data-fancybox-close="" runat="server">Add to cart</a>--%>
+                                    <asp:Button Text="Add to cart" runat="server" data-fancybox-close="" CssClass="btn hvr-hover" OnClick="Unnamed1_Click1"/>
                                 </div>
+                            </div>
 
-                                <div class="add-to-btn">
-                                    <div class="add-comp">
-                                        <a class="btn hvr-hover" href="#"><i class="fas fa-heart"></i> Add to wishlist</a>
-                                        <a class="btn hvr-hover" href="#"><i class="fas fa-sync-alt"></i> Add to Compare</a>
-                                    </div>
+                            <div class="add-to-btn">
+                                <div class="add-comp">
+                                    <a class="btn hvr-hover" href="#"><i class="fas fa-heart"></i> Add to wishlist</a>
+                                    <a class="btn hvr-hover" href="#"><i class="fas fa-sync-alt"></i> Add to Compare</a>
+                                </div>
                               
-                                </div>
+                            </div>
                     </div>
                 </div>
             </div>

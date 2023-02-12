@@ -15,6 +15,8 @@ namespace AdvancedWebDevelopment
 {
     public partial class Customer_Shop : BasePage
     {
+        ShoppingCart myCart;
+        Product prod = null;
         protected void Page_Load(object sender, EventArgs e)
         {
             DataSet shirts = GetShirt();
@@ -69,6 +71,12 @@ namespace AdvancedWebDevelopment
         {
             Session["Search"] = txtSearch.Text;
             Response.Redirect("Customer_Search.aspx");
+        }
+
+        protected void lnkAddToCart_Click(object sender, EventArgs e)
+        {
+
+            Product product = new Product().getProduct(prodID);
         }
     }
 }

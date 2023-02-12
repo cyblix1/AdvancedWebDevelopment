@@ -32,6 +32,7 @@ namespace AdvancedWebDevelopment
             routes.MapPageRoute("SecurityEmail", "EmailInput", "~/Customer_ForgetPasswordEmailInput.aspx");
             routes.MapPageRoute("Forgetpass", "forgetpass", "~/Customer_ForgetPassword.aspx");
             routes.MapPageRoute("changepass", "Changepassword", "~/Customer_ChangePassword.aspx");
+            routes.MapPageRoute("Cart", "ShoppingCart", "~/Customer_Cart.aspx");
         }
 
 

@@ -1864,6 +1864,7 @@
     <Content Include="assets\Customer\webfonts\fa-regular-400.svg" />
     <Content Include="assets\Customer\webfonts\fa-solid-900.svg" />
     <Content Include="assets\Customer_Register.aspx" />
+    <Content Include="Customer_Cart.aspx" />
     <Content Include="Customer_ChangePassword.aspx" />
     <Content Include="Customer_EmailVerfication.aspx" />
     <Content Include="Customer_ForgetPassword.aspx" />
@@ -2535,12 +2536,20 @@
     <Compile Include="BasePage.cs">
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
+    <Compile Include="CartItem.cs" />
     <Compile Include="CustomerMaster.Master.cs">
       <DependentUpon>CustomerMaster.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="CustomerMaster.Master.designer.cs">
       <DependentUpon>CustomerMaster.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Customer_Cart.aspx.cs">
+      <DependentUpon>Customer_Cart.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Customer_Cart.aspx.designer.cs">
+      <DependentUpon>Customer_Cart.aspx</DependentUpon>
     </Compile>
     <Compile Include="Customer_ChangePassword.aspx.cs">
       <DependentUpon>Customer_ChangePassword.aspx</DependentUpon>
@@ -2625,6 +2634,7 @@
       <DependentUpon>ProductDetails.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ShoppingCart.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="assets\Admin\scss\navs\_global.scss" />
